@@ -1,14 +1,9 @@
-import Link from 'next/link';
+import Script from 'next/script'
 
 export default function Header({ name }) {
   return (
-    <header className="pt-20 pb-12">
-      <div className="w-12 h-12 rounded-full block mx-auto mb-4 bg-gradient-conic from-gradient-3 to-gradient-4" />
-      <p className="text-2xl dark:text-white text-center">
-        <Link href="/">
-          <a>{name}</a>
-        </Link>
-      </p>
-    </header>
+    <>
+      <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Vl_8qUuNG8c7giECClFDati0NUPsJFXfiFe3VYFnU6pg68wdBA0chrWMqSjLYOlk9nn3rrcgA?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+    </>
   );
 }
